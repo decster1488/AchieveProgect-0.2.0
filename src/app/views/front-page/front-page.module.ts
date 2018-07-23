@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FrontPageRoutingModule } from './front-page-routing.module';
 import { LoginComponent } from './login/login.component';
 import { SingupComponent } from './singup/singup.component';
+import { FrontPageComponent } from './front-page.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { SingupComponent } from './singup/singup.component';
     FrontPageRoutingModule
   ],
   declarations: [LoginComponent,
-    SingupComponent]
+    SingupComponent,
+    FrontPageComponent]
 })
 export class FrontPageModule { }
