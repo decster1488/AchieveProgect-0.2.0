@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {FrontPageComponent} from './front-page/front-page.component';
+
 
 const routes: Routes = [];
 
@@ -9,12 +9,7 @@ const routes: Routes = [];
   exports: [RouterModule]
 })
 
-const frontPageRouter: Routes = [
-  {
-    path: '',
-    component: FrontPageComponent
-  }
-]
+//const frontPageRouter: Routes = [];
 
 export class FrontPageRoutingModule {
 
