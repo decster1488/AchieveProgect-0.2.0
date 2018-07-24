@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {FrontPageComponent} from './front-page.component';
 import {LoginComponent} from './login/login.component';
-import {SingupComponent} from './singup/singup.component';
+import {SignupComponent} from './signup/signup.component';
 
 
 const frontPageRouter: Routes = [
@@ -16,7 +16,7 @@ const frontPageRouter: Routes = [
   },
   {
     path: '/singup',
-    component: SingupComponent
+    component: SignupComponent
   }
   ];
 
@@ -24,7 +24,6 @@ const frontPageRouter: Routes = [
   imports: [RouterModule.forChild(frontPageRouter)],
   exports: [RouterModule]
 })
-
 
 
 export class FrontPageRoutingModule {
