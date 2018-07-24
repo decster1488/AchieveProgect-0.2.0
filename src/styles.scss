@@ -5,4 +5,19 @@
 body {
   background-color: $back-background;
 }
+.content-holder{
+  background-color: $content-background;
+  height: 100vh;
+  text-align: center;
+  border-radius: 50px;
+
+}
+
+.frontpage-main-block {
+  text-align: center;
+  background-color: $content-background;
+  color: #EEEEEE;
+  border-radius: 50px;
+}
+
 
