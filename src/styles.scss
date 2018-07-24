@@ -3,10 +3,9 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 body {
-  background-color: $back-background;
+  background-image: url("./assets/images/background.jpg");
 }
 .content-holder{
-  background-color: $content-background;
   height: 100vh;
   width: 90%;
   border-radius: 15px;
@@ -20,12 +19,20 @@ body {
 
 .frontpage-main-block {
   text-align: center;
-  background-color: $content-background;
-  color: #EEEEEE;
+  color: #ffffff;
   border-radius: 50px;
   height: 100%;
   display: flex;
   justify-content: center;
+}
+
+.front-page-btn-row{
+  margin-top: 8%;
+}
+.front-page-btn-holder{
+  input{
+    margin: 5px;
+  }
 }
 
 
