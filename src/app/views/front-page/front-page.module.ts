@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { FrontPageRoutingModule } from './front-page-routing.module';
 import { LoginComponent } from './login/login.component';
-import { SingupComponent } from './singup/singup.component';
 import { FrontPageComponent } from './front-page.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -13,7 +13,8 @@ import { FrontPageComponent } from './front-page.component';
     FrontPageRoutingModule
   ],
   declarations: [LoginComponent,
-    SingupComponent,
-    FrontPageComponent]
+    FrontPageComponent,
+    SignupComponent
+     ]
 })
 export class FrontPageModule { }
