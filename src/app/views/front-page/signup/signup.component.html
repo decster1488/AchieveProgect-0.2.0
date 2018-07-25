@@ -1,11 +1,11 @@
-<input class="btn" type="button" value="SIGNUP">
-<!--<div>
-  <p>Name:</p>
-  <input type="text" [(ngModel)]="userName">
-  <p>Email:</p>
-  <input type="text">
-  <p>Password</p>
-  <input type="text">
-  <p>if everything ok press OKAY</p>
-  <input type="button" value="OKAY" (click)="okayPress()">
-</div>-->
+<input class="btn" type="button" value="SIGNUP" (click)="openHtml()">
+<swal
+  #signusSwal
+  title="Signup"
+  [html]="swalHtml"
+  [confirmButtonText]="'Signup'"
+  [showCancelButton]="true"
+  (confirm)="userSignup()"
+  background="rgba(255, 255, 255, 0.95)"
+></swal>
+
