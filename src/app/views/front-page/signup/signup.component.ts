@@ -43,7 +43,7 @@ export class SignupComponent implements OnInit {
       `
         <div>
           <p>Enter your Name:</p>
-          <input type="text" placeholder="Name" [(ngModel)]="userName" autofocus>
+          <input type="text" placeholder="Name" [(ngModel)]="userName" autofocus id="suUser">
           <p>Entre your E-mail:</p>
           <input type="text" placeholder="E-mail" [(ngModel)]="userMail">
           <p>Enter password:</p>

@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
     this.swalHtml = `
       <div>
         <p>Enter Your Name:</p>
-        <input type="text" placeholder="Name" [(ngModel)]="userName">
+        <input type="text" placeholder="Name" [(ngModel)]="userName" autofocus>
         <p>Enter Password:</p> 
         <input type="password" placeholder="Password" [(ngModel)]="userPass">
       </div>
