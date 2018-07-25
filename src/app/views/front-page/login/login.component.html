@@ -1,2 +1,7 @@
-<!--<input class="btn" type="button" value="Login Swal"  (click)="openSwal()" >-->
+<input class="btn" type="button" value="LOGIN"  (click)="openSwal()" >
 
+<swal
+  #loginSwal
+  [html]="swalHtml"
+  [confirmButtonText]="'Login'"
+></swal>
