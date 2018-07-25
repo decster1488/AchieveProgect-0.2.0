@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { FrontPageComponent } from './front-page.component';
 import { SignupComponent } from './signup/signup.component';
 import {FormsModule} from '@angular/forms';
+import {SweetAlert2Module} from '@toverux/ngx-sweetalert2';
 
 
 
@@ -13,6 +14,7 @@ import {FormsModule} from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
+    SweetAlert2Module.forRoot(),
     FrontPageRoutingModule
   ],
   declarations: [LoginComponent,

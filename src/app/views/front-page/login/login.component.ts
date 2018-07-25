@@ -7,22 +7,31 @@ import {SwalComponent} from '@toverux/ngx-sweetalert2';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
+  public userName;
+  public userPass;
   swalHtml: any;
 
-  @ViewChild('createSwal') private createSwal: SwalComponent;
+  @ViewChild('loginSwal') private createSwal: SwalComponent;
   constructor() { }
 
   ngOnInit() {
   }
 
-/*  openSwal(){
+  openSwal(){
     this.setSwalHtml();
     this.createSwal.html = this.swalHtml;
     this.createSwal.show();
   }
 
   setSwalHtml() {
-    this.swalHtml = `<div><h1>Hello</h1></div>`;
-  }*/
+    this.swalHtml = `
+      <div>
+        <p>Enter Your Name:</p>
+        <input type="text" [(ngModel)]="userName">
+        <p>Enter Password:</p> 
+        <input type="password" [(ngModel)]="userPass">
+      </div>
+      
+      `;
+  }
 }
