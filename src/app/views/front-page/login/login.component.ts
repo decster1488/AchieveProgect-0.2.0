@@ -27,11 +27,14 @@ export class LoginComponent implements OnInit {
     this.swalHtml = `
       <div>
         <p>Enter Your Name:</p>
-        <input type="text" [(ngModel)]="userName">
+        <input type="text" placeholder="Name" [(ngModel)]="userName">
         <p>Enter Password:</p> 
-        <input type="password" [(ngModel)]="userPass">
+        <input type="password" placeholder="Password" [(ngModel)]="userPass">
       </div>
       
       `;
+  }
+  userLogin(){
+
   }
 }

@@ -2,6 +2,10 @@
 
 <swal
   #loginSwal
+  title="Login"
   [html]="swalHtml"
   [confirmButtonText]="'Login'"
+  [showCancelButton]="true"
+  (confirm)="userLogin()"
+  background="rgba(255, 255, 255, 0.95)"
 ></swal>
