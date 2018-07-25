@@ -5,6 +5,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ErrorPageComponent } from './core/error-page/error-page.component';
+import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,8 +15,9 @@ import { ErrorPageComponent } from './core/error-page/error-page.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
-
+    SweetAlert2Module.forRoot(),
     BsDropdownModule.forRoot()
   ],
   providers: [],
